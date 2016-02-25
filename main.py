@@ -39,4 +39,16 @@ draw_line( screen, 0, YRES / 2, XRES - 1, YRES / 2, color )
 #vertical
 draw_line( screen, XRES / 2, 0, XRES / 2, YRES - 1, color )
 
-display(screen)
+#Original Image~~
+Mscreen = new_screen()
+color = [ 0, 255, 255 ]
+
+for x in range(255):
+	if (x % 2) == 0:
+		draw_line( Mscreen, 0, 250, x, 2*x, color )
+
+display(Mscreen)
+
+#display(screen)
+
+
